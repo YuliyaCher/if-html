@@ -3,10 +3,168 @@
     padding: 0px;
     box-sizing: border-box;
 }
-/* content */
 body {
+    display: block;
     font-family: 'Roboto', sans-serif;
     color: #383838;
+}
+
+/* header */
+header {
+    /* max-width: 1440px;
+    margin: 0px auto; */
+    min-height: 100vh;
+    /* height: 900px; */
+    display: block;
+    background: url(./img/castelmezzano-1979546\ 1.png);
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+}
+.header_full {
+    max-width: 1440px;
+    margin: 0px auto;
+}
+.navigation {
+    display: flex;
+    list-style-type: none;
+    font-size: 24px;
+    text-decoration: none;
+    margin: 50px 104px;
+    position: absolute;
+}
+.navigation_logo li {
+    margin-right: 684px;
+    list-style-type: none;
+}
+.navigation_item a {
+    text-decoration: none;
+    color: white;
+    margin-right: 24px;
+}
+.navigation_item a::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 2px;
+    margin: 0px auto;
+    background: #f5bd41;
+    margin-top: 12px;
+}
+.navigation_icon a {
+    margin-left: 24px;
+}
+.header_h2 h2 {
+    font-weight: 500;
+    color: white;
+    padding-top: 293px;
+    margin-left: 104px;
+    font-size: 50px;
+}
+
+.download {
+    display: inline-flex;
+    padding-top: 329px;
+    align-items: center;
+}
+.download a {
+    margin-left: 580px;
+}
+.download a:last-child {
+    margin-left: 16px;
+}
+
+/* wrapper_mobile*/
+.wrapper_mobile {
+    max-height: 533px;
+    width: 350px;
+    display: block;
+}
+.wrapper_top_mobile {
+    min-width: 360px;
+    display: flex;
+    margin: 0 auto;
+}
+.logo_mob img {
+    margin-right: 110px;
+    margin-left: 4px;
+    margin-top: 16px;
+}
+.icons_mob {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 16px;
+}
+.icons_mob img {
+    margin-right: 16px;
+}
+@media (max-width: 800px){
+    .wrapper_desktop {
+    display: none ;
+}
+.wrapper_top_mobile {
+    display: flex;
+}
+}
+@media (min-width: 801px) {
+    .wrapper_desktop {
+        display: block;
+    }
+    .wrapper_top_mobile {
+        display: none;
+    }
+}
+/*h2_mob*/
+.header_h2_mob h2 {
+    font-weight: 500;
+    font-size: 30px;
+    font-style: normal;
+}
+@media (max-width: 800px){
+    .header_h2 {
+    display: none ;
+}
+.header_h2_mob {
+    display: flex;
+}
+}
+@media (min-width: 801px) {
+    .header_h2 {
+        display: block;
+    }
+    .header_h2_mob {
+        display: none;
+    }
+}
+.header_h2_mob {
+    margin-top: 52px;
+    color: white;
+}
+/* download_mob*/
+@media (max-width: 800px){
+    .download {
+    display: none ;
+}
+.download_mob {
+    display: flex;
+}
+}
+@media (min-width: 801px) {
+    .download {
+        display: block;
+    }
+    .download_mob {
+        display: none;
+    }
+}
+.download_mob {
+    margin-top: 295px;   
+}
+/* content */
+main {
+    max-width: 1440px;
+    margin: 0px auto;
 }
 .content {
     margin: 0px auto;
@@ -51,11 +209,16 @@ body {
     margin-top: 100px;
 }
 
+
 /* footer */
 footer {
-    max-width: 1440px;
-    height: 630px;
+    /* max-width: 1440px;
+    margin: 0px auto;
+    min-height: 600px; */
     background: #10367C;
+}
+.footer_full {
+    max-width: 1440px;
     margin: 0px auto;
 }
 .footer_top {
@@ -67,9 +230,6 @@ footer {
     color: white;
     grid-column: 3;
     margin-top: 120px;
-}
-.footer_nav {
-    flex-direction: column;
 }
 .footer_nav li {
     margin-bottom: 24px;
@@ -84,4 +244,43 @@ footer {
 .footer_nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    .footer_top {
+        display: none;
+    }
+    .footer_mobile {
+        display: block;
+    }
+}
+@media (min-width: 801px) {
+    .footer_top {
+        display: flex;
+    }
+    .footer_mobile {
+        display: none;
+    }
+}
+.footer_mobile {
+    min-width: 360px;
+    height: 203px;
+    text-align: center;
+}
+.footer_logo img {
+    margin-top: 40px;
+}
+.footer_mobile li {
+    display: inline-flex;
+}
+.footer_menu a {
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 32px;
+    margin-left: 16px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.date {
+    margin-bottom: 40px;
 }
