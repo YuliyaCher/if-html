@@ -18,26 +18,47 @@
             <div class="wrapper_desktop">
                 <div class="navigation">
                     <ul class="navigation_logo">
-                        <li><img src="./img/logo_vector.png"></li>
+                        <li class="logo_img"><img src="./img/logo_vector.png"></li>
+                        <li class="nav_item"><a href="#">Stays</a></li>
+                        <li class="nav_item"><a href="#">Attractions</a></li>
+                        <li class="nav_icon"><a href="#"></a></li>
+                        <li class="nav_icon"><a href="#"></a></li>
                     </ul>
-                    <div class="navigation_item">
-                        <a href="#">Stays</a>
-                        <a href="#">Attractions</a>
-                        <a href="#"><img src="./img/Night.png"></a>
-                        <a href="#"><img src="./img/AccountCircle.png"></a>
-                    </div>
                 </div>
                 <div class="header_h2">
                     <h2>Discover stays<br>
                         to live, work or just relax</h2>
                 </div>
+
+                <form action="">
+                    <div class="first">
+                        <p><label for="search">Your destination or hotel name</label></p>
+                        <input id="search" type="text" name="search" placeholder="Enter city"/>
+                    </div>
+                    <div class="second">
+                        <p>
+                            <label for="check-in">Check-in — Check-out</label>
+                            <!-- <label for="check-out">Check-out</label> -->
+                        </p>
+                    <div>
+                        <input type="date" id="in" placeholder="Enter date">
+                        <!-- <input type="date" id="out"> -->
+                    </div>
+                    </div>
+                    <div class="three">
+                        <input id="persons" type="text" name="persons" placeholder="Enter persons">
+                    </div>
+                    <button>Search</button>
+                </form>
+
+
                 <div class="download">
                     <a href="#"><img src="./img/google-play.png"></a>
                     <a href="#"><img src="./img/App_Store.png"></a>
                 </div>
             </div>
 
-
+<!--mobile top-->
             <div class="wrapper_mobile">
                 <div class="wrapper_top_mobile">
                 <div class="logo_mob">
@@ -67,6 +88,7 @@
             <h2>What do we offer</h2>
             <div class="content_items">
                 <div class="content_item">
+                    <a class="support" href="#"></a>
                     <img src="./img/support.png" alt="support">
                     <p>Support 24/7</p>
                 </div>
@@ -84,6 +106,29 @@
                 </div>
             </div>
         </div>
+        <!--mobile main-->
+        <div class="content_mob">
+            <div class="h2_mob">
+            <h2>What do we offer</h2>
+        </div>
+            <div class="content_items_mob">
+                <div class="content_item_mob">
+                    <img src="./img/support.png" alt="support">
+                    <p>Support 24/7</p>
+                </div>
+                <div class="content_item_mob">
+                    <img src="./img/message.png" alt="message">
+                    <p>Communicate directly</p>
+                </div>
+                <div class="content_item_mob">
+                    <img src="./img/online.png" alt="online">
+                    <p>Book online</p>
+                </div>
+                <div class="content_item_mob">
+                    <img src="./img/like.png" alt="like">
+                    <p>Real guest reviews</p>
+                </div>
+            </div>
         </div>
     </main>
 
