@@ -16,41 +16,38 @@
     <header>
         <div class="header_full">
             <div class="wrapper_desktop">
-                <div class="navigation">
-                    <ul class="navigation_logo">
-                        <li class="logo_img"><img src="./img/logo_vector.png"></li>
-                        <li class="nav_item"><a href="#">Stays</a></li>
-                        <li class="nav_item"><a href="#">Attractions</a></li>
-                        <li class="nav_icon"><a href="#"></a></li>
-                        <li class="nav_icon"><a href="#"></a></li>
-                    </ul>
+                <div class="flex_grid">
+                    <div class="col"><img src="./img/logo_vector.png"></div>
+                    <div class="col"><a href="#">Stays</a></div>
+                    <div class="col"><a href="#">Attractions</a></div>
+                    <div class="col"><a href="#"></a></div>
+                    <div class="col"><a href="#"></a></div>
                 </div>
                 <div class="header_h2">
                     <h2>Discover stays<br>
                         to live, work or just relax</h2>
                 </div>
 
-                <form action="">
+                <div class="container">
+                <form action="" class="container_desktop">
                     <div class="first">
                         <p><label for="search">Your destination or hotel name</label></p>
-                        <input id="search" type="text" name="search" placeholder="Enter city"/>
+                        <input id="search" type="text" name="search" placeholder="New York"/>
                     </div>
                     <div class="second">
-                        <p>
-                            <label for="check-in">Check-in — Check-out</label>
-                            <!-- <label for="check-out">Check-out</label> -->
-                        </p>
+                        <p><label for="check-in">Check-in — Check-out</label></p>
                     <div>
-                        <input type="date" id="in" placeholder="Enter date">
-                        <!-- <input type="date" id="out"> -->
+                        <input type="date" id="in">
                     </div>
+                
                     </div>
                     <div class="three">
-                        <input id="persons" type="text" name="persons" placeholder="Enter persons">
+                        <input type="text" name="persons" class="col_persons" />
+                        <label class="label_persons">2 Adults — 0 Children — 1 Room</label>
                     </div>
                     <button>Search</button>
                 </form>
-
+            </div>
 
                 <div class="download">
                     <a href="#"><img src="./img/google-play.png"></a>
@@ -61,10 +58,11 @@
 <!--mobile top-->
             <div class="wrapper_mobile">
                 <div class="wrapper_top_mobile">
-                <div class="logo_mob">
+                <!-- <div class="logo_mob">
                     <img src="./img/logo_vector_mobile.png">
-                </div>
+                </div> -->
                 <ul class="icons_mob">
+                    <li class="logo_mob"><img src="./img/logo_vector_mobile.png"></li>
                     <li class="icon_mob"><a href="#"><img src="./img/night_mobile.png"></a></li>
                     <li class="icon_mob"><a href="#"><img src="./img//AccountCircle_mobile.png"></a></li>
                     <li class="icon_mob"><a href="#"><img src="./img/menu_mob.png"></a></li>
@@ -78,6 +76,9 @@
                 <a href="#"><img src="./img/google-play-badge_mob.png"></a>
                 <a href="#"><img src="./img/Download_on_the_App_Store_mob.png"></a>
             </div>
+            <form action="" class="container_mobile">
+
+            </form>
             </div>
         </div>
     </header>
@@ -105,6 +106,12 @@
                     <p>Real guest reviews</p>
                 </div>
             </div>
+        </div>
+        <div class="homes">
+            <div class="content_homes">
+                <p>Homes guests loves</p>
+            </div>
+        </div>
         </div>
         <!--mobile main-->
         <div class="content_mob">
