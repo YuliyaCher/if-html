@@ -34,7 +34,7 @@ header .header_full .wrapper_desktop .flex_grid {
   width: 100%;
 }
 header .header_full .wrapper_desktop .flex_grid .col img {
-  margin-right: 660px;
+  margin-right: 670px;
 }
 header .header_full .wrapper_desktop .flex_grid .col a {
   color: white;
@@ -51,27 +51,92 @@ header .header_full .wrapper_desktop .flex_grid .col:nth-child(5) {
   width: 40px;
   height: 40px;
   background: url("./svg/profile.svg") no-repeat;
-  margin-right: 12px;
   margin-left: 24px;
 }
 header .header_full .wrapper_desktop .flex_grid .col:nth-child(5):hover {
   width: 40px;
   height: 40px;
   background-image: url("./svg/profile_active.svg");
-  margin-right: 12px;
-}
-header .header_full .wrapper_desktop .flex_grid .col:nth-child(6) {
-  background: url("./img/menu.png");
-  width: 24px;
-  height: 16px;
 }
 header .header_full .wrapper_desktop .header_h2 h2 {
   font-weight: 500;
   color: white;
   padding-top: 202px;
-  padding-bottom: 145px;
   font-size: 50px;
-  margin-left: 12px;
 }
 
-/*# sourceMappingURL=main.css.map */
+form {
+  display: flex;
+  position: relative;
+}
+form .first {
+  flex-grow: 2;
+}
+form .first p {
+  margin-left: 15px;
+}
+form .first input {
+  padding-left: 15px;
+}
+form .second {
+  flex-grow: 2;
+}
+form .second p label {
+  margin-left: 15px;
+}
+form .second input input:hover {
+  border-color: orange;
+  border-radius: 8px;
+  border-style: 3px solid;
+}
+form .three {
+  flex-grow: 2;
+  margin-top: 119px;
+}
+form .three input {
+  border-radius: 8px;
+  border-color: white;
+}
+form .three input input:focus ~ .label_persons {
+  font-size: 18px;
+  color: #383838;
+  opacity: 1;
+}
+form .three input input:focus ~ input:not(:focus):valid ~ .label_persons {
+  font-size: 18px;
+  color: #383838;
+  opacity: 1;
+}
+form .three input:hover {
+  border-color: orange;
+  border-radius: 8px;
+  border-style: solid;
+}
+form .three .label_persons {
+  font-weight: 400;
+}
+form .three div input {
+  margin-top: 24px;
+  height: 64px;
+  width: 100%;
+}
+form .three p {
+  color: white;
+  margin-top: 100px;
+}
+
+@media (min-width: 1230px) {
+  .container {
+    max-width: 1440px;
+  }
+
+  form .container_mobile {
+    display: none;
+  }
+
+  form .container_desktop {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=main.scc.map */
