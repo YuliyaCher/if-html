@@ -1,0 +1,70 @@
+header {
+    background: url('./img/castelmezzano-1979546\ 1.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    background-size: cover;
+    margin: 0 auto;
+    .header_full {
+        width: 100%;
+        .wrapper_desktop {
+            max-width: 1223px;
+            margin: 0 auto;
+            .flex_grid {
+                display: flex;
+                align-items: center;
+                padding-top: 50px;
+                list-style-type: none;
+                font-size: 24px;
+                width: 100%;
+                .col {
+                    img {
+                        margin-right: 660px;
+                    }
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        margin-right: 24px;
+                    }
+                .col:nth-child(4) {
+                    width: 30px;
+                    height: 30px;
+                    background: url('./svg/day.svg') no-repeat;
+                    // margin-left: 24px;
+                }
+                .col:nth-child(5) {
+                    width: 40px;
+                    height: 40px;
+                    background: url('./svg/profile.svg') no-repeat;
+                    margin-right: 12px;
+                    // margin-left: 24px;
+                }
+                .col:nth-child(5):hover {
+                    width: 40px;
+                    height: 40px;
+                    background-image: url('./svg/profile_active.svg');
+                    // margin-right: 12px;
+                }
+                // .col:nth-child(6) {
+                //     background-image: url('./img/menu.png');
+                //     width: 24px;
+                //     height: 16px;
+                //     margin-left: 24px;
+                //     // position: absolute;
+                //     margin-right: 12px;
+                // }
+            }
+            .header_h2 {
+                h2 {
+                    font-weight: 500;
+                    color: white;
+                    padding-top: 202px;
+                    padding-bottom: 145px;
+                    font-size: 50px;
+                    margin-left: 12px;
+                }
+            }
+        }
+    }
+}
+}
