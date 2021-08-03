@@ -8,61 +8,45 @@ header {
     .header_full {
         width: 100%;
         .wrapper_desktop {
-            max-width: 1223px;
+            max-width: 1440px;
+            height: 900px;
+            // height: 100%;
             margin: 0 auto;
             .flex_grid {
+                // align-items: center;
+                padding-top: 50px;
+                list-style-type: none;
                 display: flex;
                 align-items: center;
                 padding-top: 50px;
                 list-style-type: none;
                 font-size: 24px;
-                width: 100%;
-                .col {
-                    img {
-                        margin-right: 660px;
-                    }
-                    a {
-                        color: white;
-                        text-decoration: none;
-                        margin-right: 24px;
-                    }
-                .col:nth-child(4) {
-                    width: 30px;
-                    height: 30px;
-                    background: url('./svg/day.svg') no-repeat;
-                    // margin-left: 24px;
+                justify-content: flex-end;
+                .nav_text a:hover {
+                    text-decoration: underline 4px;
+                    text-decoration-color: #F5BD41;
+                    border: 4px;
                 }
-                .col:nth-child(5) {
-                    width: 40px;
-                    height: 40px;
-                    background: url('./svg/profile.svg') no-repeat;
-                    margin-right: 12px;
-                    // margin-left: 24px;
-                }
-                .col:nth-child(5):hover {
-                    width: 40px;
-                    height: 40px;
-                    background-image: url('./svg/profile_active.svg');
-                    // margin-right: 12px;
-                }
-                // .col:nth-child(6) {
-                //     background-image: url('./img/menu.png');
-                //     width: 24px;
-                //     height: 16px;
-                //     margin-left: 24px;
-                //     // position: absolute;
-                //     margin-right: 12px;
-                // }
-            }
-            .header_h2 {
-                h2 {
-                    font-weight: 500;
-                    color: white;
-                    padding-top: 202px;
-                    padding-bottom: 145px;
-                    font-size: 50px;
-                    margin-left: 12px;
-                }
+                /* .content h2::after {
+   content: '';
+   position: relative;
+   width: 100px;
+   height: 4px;
+   margin: 0px auto;
+   top: 20px;
+   left: 0;
+   right: 0;
+   background: #f5bd41;
+} */
+        }
+        .header_h2 {
+            h2 {
+                font-weight: 500;
+                color: white;
+                margin-top: 202px;
+                padding-bottom: 145px;
+                font-size: 50px;
+                margin-left: 12px;
             }
         }
     }
