@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
-        rel="stylesheet"/>
+        rel="stylesheet" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css"/>
-    <link rel="stylesheet" href="./main.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./main.css" />
     <!-- <link rel="stylesheet" href="./form.scss"/> -->
 </head>
 
@@ -21,11 +25,10 @@
             <div class="wrapper_desktop">
                 <div class="flex_grid">
                     <div class="col"><img src="./img/logo_vector.png"></div>
-                    <div class="col"><a href="#">Stays</a></div>
-                    <div class="col"><a href="#">Attractions</a></div>
-                    <div class="col"><a href="#"></a></div>
-                    <div class="col"><a href="#"></a></div>
-                    <div class="col"><a href="#"></a></div>
+                    <div class="nav_text"><a href="#">Stays</a></div>
+                    <div class="nav_text"><a href="#">Attractions</a></div>
+                    <div class="col_nav"><a href="#"><img src="./img/Night.png"></a></div>
+                    <div class="col_nav"><a href="#"><img src="./img/AccountCircle.png"></a></div>
                 </div>
                 <div class="header_h2">
                     <h2>Discover stays<br>
@@ -35,27 +38,38 @@
                 <div class="container--form col-md-12 col-lg-12 col-12">
                     <form action="/" method="get">
                         <div class="row--form">
-                        <div class="input--place--wrap">
-                            <input type="text" name="place" class="col--place col-md-12 col-lg-12 col-12" required/>
-                            <label class="label--place">Your destination or hotel name</label>
-                        </div>
-                        <div class="input--date--wrap">
-                            <div class="label--date--wrap-first">
-                                <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')"
-                                    class="col--date col-md-12 col-lg-12 col-12" required/>
-                                <label class="label--date--first">Check-in</label>
+                            <div class="input--place--wrap">
+                                <input type="text" name="place"
+                                    class="col--place col-md-12 col-lg-12 col-12"
+                                    required />
+                                <label class="label--place">Your destination or hotel
+                                    name</label>
                             </div>
-                        <div class="label--date--wrap-second">
-                            <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')"
-                                    class="col--date col-md-12 col-lg-12 col-12" required/>
-                            <label class="label--date--second">Check-out</label>
+                            <div class="input--date--wrap">
+                                <div class="label--date--wrap-first">
+                                    <input type="text" onfocus="(this.type='date')"
+                                        onblur="(this.type='text')"
+                                        class="col--date col-md-12 col-lg-12 col-12"
+                                        required />
+                                    <label class="label--date--first">Check-in</label>
+                                </div>
+                                <div class="label--date--wrap-second">
+                                    <input type="text" onfocus="(this.type='date')"
+                                        onblur="(this.type='text')"
+                                        class="col--date col-md-12 col-lg-12 col-12"
+                                        required />
+                                    <label class="label--date--second">Check-out</label>
+                                </div>
+                            </div>
+                            <input type="text" name="quests"
+                                class="col--guests col-md-12 col-lg-12 col-12" required />
+                            <label class="label--quests">2 Adults &#8212; 0 Children
+                                &#8212; 1 Room</label>
+                            <button
+                                class="col--button button__text col-md-12 col-md-12 col-12">
+                                Search</button>
                         </div>
-                        </div>
-                        <input type="text" name="quests" class="col--guests col-md-12 col-lg-12 col-12" required/>
-                        <label class="label--quests">2 Adults &#8212; 0 Children &#8212; 1 Room</label>
-                        <button class="col--button button__text col-md-12 col-md-12 col-12"> Search</button>
-                    </div>
-                    <!-- </form> -->
+                        <!-- </form> -->
                 </div>
 
                 <div class="download">
@@ -70,116 +84,292 @@
 
     <main>
         <div class="main_full">
-        <div class="content">
-            <h2>What do we offer</h2>
-            <div class="content_items">
-                <div class="content_item">
-                    <a class="support" href="#"></a>
-                    <img src="./img/support.png" alt="support">
-                    <p>Support 24/7</p>
-                </div>
-                <div class="content_item">
-                    <img src="./img/message.png" alt="message">
-                    <p>Communicate directly</p>
-                </div>
-                <div class="content_item">
-                    <img src="./img/online.png" alt="online">
-                    <p>Book online</p>
-                </div>
-                <div class="content_item">
-                    <img src="./img/like.png" alt="like">
-                    <p>Real guest reviews</p>
+            <div class="content">
+                <h2>What do we offer</h2>
+                <div class="content_items">
+                    <div class="content_item">
+                        <a class="support" href="#">
+                        <img src="./img/support.png" alt="support"></a>
+                        <p>Support 24/7</p>
+                    </div>
+                    <div class="content_item">
+                        <a class="message" href="#">
+                        <img src="./img/message.png" alt="message"></a>
+                        <p>Communicate directly</p>
+                    </div>
+                    <div class="content_item">
+                        <a class="online" href="#">
+                        <img src="./img/online.png" alt="online"></a>
+                        <p>Book online</p>
+                    </div>
+                    <div class="content_item">
+                        <a class="like" href="#">
+                        <img src="./img/like.png" alt="like"></a>
+                        <p>Real guest reviews</p>
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
     </main>
 
-<div class="container_homes">
-    <div class="homes_des">
-        <div class="content_homes">
-            <p>Homes guests loves</p>
-        </div>
-        <div class="hostel_all">
-        <div class="hostel">
-                <a href="#"><img src="./img/Hotel Leopold.png" alt="Hotel_Leopold"></a>
-                <a href="#">Hotel Leopold</a></li>
-                <p>Saint Petersburg, Russia</p></li>
-        </div>
-        <div class="hostel">
-            <a href="#"><img src="./img/Apartment Sunshine.png" alt="Apartment_Sunshine"></a>
-            <a href="#">Apartment Sunshine</a>
-            <p>Santa Cruz de Tenerife, Spain</p>
-        </div>
-        <div class="hostel">
-            <a href="#"><img src="./img/Villa Kunerad.png" alt="Villa_Kunerad"></a>
-            <a href="#">Villa Kunerad</a>
-            <p>Vysokie Tatry, Slowakia</p>
-        </div>
-        <div class="hostel">
-            <a href="#"><img src="./img/Hostel Friendship.png" alt="Hostel_Friendship"></a>
-            <a href="#">Hostel Friendship</a>
-            <p>Berlin, Germany</p>
-        </div>
-        <div class="arrow">
-            <a href="#"><img src="./img/arrow.png"></a>
+    <div class="container_homes">
+        <div class="homes_des">
+            <div class="content_homes">
+                <p>Homes guests loves</p>
+            </div>
+            <div class="hostel_all">
+                <div class="hostel">
+                    <a href="#"><img src="./img/Hotel Leopold.png"
+                            alt="Hotel_Leopold"></a>
+                    <a href="#">Hotel Leopold</a></li>
+                    <p>Saint Petersburg, Russia</p>
+                    </li>
+                </div>
+                <div class="hostel">
+                    <a href="#"><img src="./img/Apartment Sunshine.png"
+                            alt="Apartment_Sunshine"></a>
+                    <a href="#">Apartment Sunshine</a>
+                    <p>Santa Cruz de Tenerife, Spain</p>
+                </div>
+                <div class="hostel">
+                    <a href="#"><img src="./img/Villa Kunerad.png"
+                            alt="Villa_Kunerad"></a>
+                    <a href="#">Villa Kunerad</a>
+                    <p>Vysokie Tatry, Slowakia</p>
+                </div>
+                <div class="hostel">
+                    <a href="#"><img src="./img/Hostel Friendship.png"
+                            alt="Hostel_Friendship"></a>
+                    <a href="#">Hostel Friendship</a>
+                    <p>Berlin, Germany</p>
+                </div>
+                <div class="arrow">
+                    <a href="#"><img src="./img/arrow.png"></a>
+                </div>
+            </div>
+            
         </div>
     </div>
-</div>
-</div>
+
+
+
+    <div class="container_country">
+        <div class="contry">
+            <div class="destinations">
+                <div class="destinations_name">
+                    <p>The best destinations</p>
+                </div>
+                <div class="destinations_nav">
+                    <div class="btn-group" role="group"
+                        aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio"
+                            id="btnradio1" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary"
+                            for="btnradio1">Regions</label>
+
+                        <input type="radio" class="btn-check" name="btnradio"
+                            id="btnradio2" autocomplete="off">
+                        <label class="btn btn-outline-primary"
+                            for="btnradio2">Cities</label>
+
+                        <input type="radio" class="btn-check" name="btnradio"
+                            id="btnradio3" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio3">Places of
+                            interest</label>
+                    </div>
+                </div>
+                <div class="regions">
+                    <div class="region_name">
+                        <a href="#"><img src="./img/Regions/Maldives.png">
+                            <p>Maldives</p>
+                        </a>
+                    </div>
+                    <div class="region_name">
+                        <a href="#"><img src="./img/Regions/Spain.png">
+                            <p>Spain</p>
+                        </a>
+                    </div>
+                    <div class="region_name">
+                        <a href="#"><img src="./img/Regions/Norway.png">
+                            <p>Norway</p>
+                        </a>
+                    </div>
+                    <div class="region_name">
+                        <a href="#"><img src="./img/Regions/Island.png">
+                            <p>Island</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="arrow_button">
+                    <div class="more_regions">
+                        <a href="#"><img src="./img/Regions/arrow_buttton.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="guests_reviews">
+        <div class="guest_name">
+            <p>Guests reviews</p>
+        </div>
+        <div class="guests">
+            <div class="guest">
+                <div class="image_guest">
+                    <a href="#"><img src="./img/guests/Ubud-Bali_Resort&SPA.png"></a>
+                    <p>From 250 USD</p>
+                </div>
+                <div class="description">
+                    <div class="score">
+                        <a href="#">
+                            <h5>Ubud Bali Resort&SPA</h5>
+                        </a>
+                        <img src="./img/score_1.png">
+                    </div>
+
+                    <div class="review_country">
+                        <a href="#">Bali, Indonesia</a>
+                        <p>1324 reviews</p>
+                    </div>
+                    <div class="review">
+                        <img src="./img/Vector.png">
+                        <div class="country">
+                            <p>Hanna Ivanova</br><span>🇺🇦 Ukraine</span></p>
+                        </div>
+                    </div>
+                    <div class="text_review">
+                        <p>Great location, really pleasant and clean rooms, but the thing
+                            that
+                            makes this such a good place to stay are the staff. All of the
+                            people are incredibly helpful and generous with their time and
+                            advice. </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="guest">
+                <div class="image_guest">
+                    <a href="#"><img src="./img/guests/King-Kong-Hostel.png"></a>
+                    <p>From 40 USD</p>
+                </div>
+                <div class="description">
+                    <div class="score">
+                        <a href="#">
+                            <h5>King Kong Hostel</h5>
+                        </a>
+                        <img src="./img/score_2.png">
+                    </div>
+
+                    <div class="review_country">
+                        <a href="#">Rotterdam, Netherlands</a>
+                        <p>2016 reviews</p>
+                    </div>
+                    <div class="review">
+                        <img src="./img/Vector.png">
+                        <div class="country">
+                            <p>Adam Smith</br><span>🇺🇸 USA</span></p>
+                        </div>
+                    </div>
+                    <div class="text_review">
+                        <p>I've been in this hostel for a month and here is the best
+                            hostel of all
+                            Excellent management of excellent and ethical staff and
+                            bedrooms Bathrooms are always clean and excellent
+                            Most importantly, those who work here are kind and
+                            good-natured. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guest">
+                <div class="image_guest">
+                    <a href="#"><img src="./img/guests/Rokoko-Hotel.png"></a>
+                    <p>From 100 USD</p>
+                </div>
+                <div class="description">
+                    <div class="score">
+                        <a href="#">
+                            <h5>Rokoko Hotel</h5>
+                        </a>
+                        <img src="./img/score_3.png">
+                    </div>
+
+                    <div class="review_country">
+                        <a href="#">Ourika, Marocco</a>
+                        <p>815 reviews</p>
+                    </div>
+                    <div class="review">
+                        <img src="./img/Vector.png">
+                        <div class="country">
+                            <p>Anika Messer</br><span>🇩🇪 Germany</span></p>
+                        </div>
+                    </div>
+                    <div class="text_review">
+                        <p>Efficient, friendly, professional, and appropriately attentive.
+                            Great hotel in a great location. Easy access to all the
+                            surrounding historical sites. Staff is fantastic. Will
+                            definitely stay at this location during my next stay in
+                            Marocco.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 
 
     <footer>
         <div class="footer_full">
-        <div class="footer_top">
-            <div class="links">
-                <ul class="footer_nav">
-                    <li class="f_bar"><a href="#">About</a></li>
-                    <li class="f_bar"><a href="#">How Triphouse works</a></li>
-                    <li class="f_bar"><a href="#">Careers</a></li>
-                    <li class="f_bar"><a href="#">Privacy</a></li>
-                    <li class="f_bar"><a href="#">Terms</a></li>
-                    <li class="f_bar"></li>
-                    <li class="f_bar"></li>
-                    <li class="f_bar"></li>
-                    <li class="f_bar"><img
-                            src="./img/© 2020 Triphouse, Inc. All rights reserved.png">
-                    </li>
-                </ul>
+            <div class="footer_top">
+                <div class="links">
+                    <ul class="footer_nav">
+                        <li class="f_bar"><a href="#">About</a></li>
+                        <li class="f_bar"><a href="#">How Triphouse works</a></li>
+                        <li class="f_bar"><a href="#">Careers</a></li>
+                        <li class="f_bar"><a href="#">Privacy</a></li>
+                        <li class="f_bar"><a href="#">Terms</a></li>
+                        <li class="f_bar"></li>
+                        <li class="f_bar"></li>
+                        <li class="f_bar"></li>
+                        <li class="f_bar"><img
+                                src="./img/© 2020 Triphouse, Inc. All rights reserved.png">
+                        </li>
+                    </ul>
+                </div>
+                <div class="links">
+                    <ul class="footer_nav">
+                        <li class="f_bar"><a href="#">Property types</a></li>
+                        <li class="f_bar"><a href="#">Guest houses</a></li>
+                        <li class="f_bar"><a href="#">Hotels</a></li>
+                        <li class="f_bar"><a href="#">Apartments</a></li>
+                        <li class="f_bar"><a href="#">Villas</a></li>
+                        <li class="f_bar"><a href="#">Holiday homes</a></li>
+                        <li class="f_bar"><a href="#">Hostels</a></li>
+                    </ul>
+                </div>
+                <div class="links">
+                    <ul class="footer_nav">
+                        <li class="f_bar"><a href="#">Support</a></li>
+                        <li class="f_bar"><a href="#">Contact Customer Service</a></li>
+                        <li class="f_bar"><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="links">
-                <ul class="footer_nav">
-                    <li class="f_bar"><a href="#">Property types</a></li>
-                    <li class="f_bar"><a href="#">Guest houses</a></li>
-                    <li class="f_bar"><a href="#">Hotels</a></li>
-                    <li class="f_bar"><a href="#">Apartments</a></li>
-                    <li class="f_bar"><a href="#">Villas</a></li>
-                    <li class="f_bar"><a href="#">Holiday homes</a></li>
-                    <li class="f_bar"><a href="#">Hostels</a></li>
+            <div class="footer_mobile">
+                <div class="footer_logo">
+                    <img src="./img/logo_footer.png">
+                </div>
+                <ul class="footer_menu">
+                    <li class="bottom"><a href="#">About</a></li>
+                    <li class="bottom"><a href="#">Property types</a></li>
+                    <li class="bottom"><a href="#">Support</a></li>
                 </ul>
-            </div>
-            <div class="links">
-                <ul class="footer_nav">
-                    <li class="f_bar"><a href="#">Support</a></li>
-                    <li class="f_bar"><a href="#">Contact Customer Service</a></li>
-                    <li class="f_bar"><a href="#">FAQ</a></li>
-                </ul>
+                <li class="date"><img
+                        src="./img/© 2020 Triphouse, Inc. All rights reserved.png">
+                </li>
             </div>
         </div>
-        <div class="footer_mobile">
-            <div class="footer_logo">
-                <img src="./img/logo_footer.png">
-            </div>
-            <ul class="footer_menu">
-                <li class="bottom"><a href="#">About</a></li>
-                <li class="bottom"><a href="#">Property types</a></li>
-                <li class="bottom"><a href="#">Support</a></li>
-            </ul>
-            <li class="date"><img
-                    src="./img/© 2020 Triphouse, Inc. All rights reserved.png">
-            </li>
-        </div>
-    </div>
     </footer>
 </body>
 
