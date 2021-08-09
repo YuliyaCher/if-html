@@ -1,5 +1,4 @@
 body {
-   max-width: 1440px;
    margin: 0 auto;
 }
 /* @media (max-width: 800px) {
@@ -1022,26 +1021,51 @@ main {
 /* sing-up */
 .sing_up {
    max-width: 1232px;
-   /* height: 200px; */
+   height: 200px;
    margin: 0 auto;
    background-color: #EAF0F9;;
 }
 .wrapper_sing-up {
    margin: 57px;
+   align-items: center;
 }
 .registr_user {
-   margin-top: 57px;
    display: flex;
-
+   align-items: center;
+}
+.user a img {
+   margin-top: 57px;
+}
+.name_sing-up {
+   margin-top: 51px;
+   margin-left: 24px;
+   font-weight: 500;
+   font-size: 24px;
+}
+.btn_sing-up {
+   background-color: #ffffff;
+   width: 128px;
+   height: 48px;
+}
+.btn_sing-up p {
+   margin-top: 10px;
+   font-size: 18px;
+   font-weight: 400;
+   color: #3077C6;
 }
 
+@media (max-width: 800px) {
+   .sing_up {
+      display: none;
+   }
+}
 
 
 /* country */
  /* навигация */
 .container_country {
    margin: 0 auto;
-   max-width: 1440px;
+   max-width: 1223px;
    width: 100%;
 }
 .destinations {
@@ -1053,14 +1077,21 @@ main {
    font-size: 40px;
    font-weight: 500;
 }
+
+.btn_group_des {
+  max-width: 622px;
+  height: 65px;
+   
+}
 .btn_group {
+   /* max-width: 1223px; */
    background-color: #F3F3F4;
    border-radius: 8px;
    max-width: 622px;
    height: 64px;
    margin-top: 104px;
    margin: 0 auto;
-   /* margin-left: 104px; */
+   margin-top: 104px;
    display: flex;
 }
 
@@ -1069,9 +1100,6 @@ main {
    border-radius: 8px;
    color: white;
 }
-/* .btn_choice:active {
-   background-color: #3077C6;
-} */
 .btn_choice {
    width: 192px;
    height: 64px;
@@ -1103,6 +1131,9 @@ main {
 }
 .region_name {
    margin-left: 16px;
+}
+.region_name:first-child {
+   margin-left: 0;
 }
 .region_name img {
    margin-top: 65px;
