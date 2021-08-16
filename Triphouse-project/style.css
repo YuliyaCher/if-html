@@ -24,7 +24,7 @@ h2 {
 }
 /* header */
 header {
-   background: url('./img/castelmezzano-1979546\ 1.png');
+   background-image: url('./img/castelmezzano-1979546.png');
    background-position: top center;
    background-repeat: no-repeat;
    color: #ffffff;
@@ -79,23 +79,49 @@ a {
    display: flex;
    align-items: center;
 }
-.nav_night img {
-   margin-right: 24px;
+.night {
+   background: url('./svg/day.svg');
+   display: block;
+   width: 30px;
+   height: 30px;
+   margin-left: 22px;
+}
+.account {
+   background: url('./svg/profile.svg');
+   display: block;
+   width: 40px;
+   height: 40px;
+   margin-left: 22px;
+}
+.account:hover {
+   background: url('./svg/profile_active.svg');
+   display: block;
+   width: 40px;
+   height: 40px;
+}
+.menu {
+   background: url('./svg/menu.svg');
+   display: block;
+   width: 24px;
+   height: 16px;
+   margin-left: 24px;
 }
 
 @media (max-width: 800px) {
    .nav_text a {
    display: none;
    }
-}
-
-@media (max-width: 800px) {
    .hostel:nth-child(3),
    .hostel:nth-child(4) {
    display: none;
    }
 }
 
+@media (min-width: 801px) {
+   .menu {
+      display: none;
+   }
+}
 
 
 
@@ -128,10 +154,6 @@ a {
    margin-bottom: 50px;
    margin-top: 20px;
    justify-content: space-between;
-}
-
-.content__item .support:nth-child(1):hover {
-   background-image: url('./svg/support.svg');
 }
 
 .content__item p {
@@ -949,10 +971,6 @@ main {
    margin-top: 20px;
 }
 
-.content__item .support:nth-child(1):hover {
-   background-image: url('./svg/support.svg');
-}
-
 .content__item p {
    font-size: 24px;
 }
@@ -1008,7 +1026,7 @@ main {
    margin-top: 24px;
 }
 .arrow__button a img{
-   margin-top: 220px;
+   margin-top: 230px;
    margin-left: -15px;
    position: absolute;
 }
@@ -1356,6 +1374,7 @@ height: 42px;
 footer {
    margin: 0 auto;
    background: #10367C; 
+   max-width: 1223px; 
 }
 
 .footer__top {
